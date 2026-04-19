@@ -1,0 +1,70 @@
+KSA CORE PRODUCT PAGE SPECIFICATION (DECISION INTELLIGENCE SYSTEM)
+
+OVERVIEW
+Multi-asset real-time decision intelligence system for analytical support only. No trade execution. No financial advice. Pure probabilistic decision modeling using multi-engine analysis with consensus and risk filtering.
+
+SUPPORTED ASSET CLASSES
+
+* Stocks
+* Crypto
+* Options
+* Futures
+* ETFs
+* Indices
+
+Instrument Model:
+Instrument = {type, symbol, exchange, pricing_feed, metadata}
+
+PAGE STRUCTURE
+
+1. LIVE MARKET STATE
+
+* Real-time price (WebSocket)
+* Volume + liquidity
+* Volatility indicator
+* Trend state
+
+2. MULTI-BRAIN SYSTEM
+
+* Momentum engine
+* Mean reversion engine
+* Macro engine
+* Risk engine
+
+Each outputs:
+Direction / Confidence / Signal tags
+
+3. CONSENSUS ENGINE
+
+* Final bias OR NO EDGE
+* Confidence band
+* Risk level
+* Scenario outputs
+
+4. RISK FIREWALL
+
+* Market regime
+* Model disagreement
+* Data validation
+
+5. AUDIT TRACE
+
+* Data sources
+* Model influence
+* Decision reasoning
+
+6. AUTH
+
+* Email login (magic link)
+
+7. PRICING
+   Free / Pro / Institutional tiers
+
+8. LEGAL
+
+* No financial advice
+* No execution
+* Probabilistic outputs only
+
+CORE FLOW
+Market Data → Models → Risk Filter → Consensus → Output
